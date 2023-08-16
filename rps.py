@@ -3,8 +3,8 @@ import random
 name = input("Enter you name: ")
 choices = ["rock", "paper", "scissors"]
 
-Cscore = 0
-Pscore = 0
+CScore = 0
+PScore = 0
 Round = 0
 
 print(f"Welcome {name.title()}.")
@@ -25,9 +25,9 @@ while True:
   if Poption == Coption:
     print("It's a tie")
 
-  elif (Poption == "rock" and Coption == "scissors") or (Poption == "paper" and Coption == "scissors") or (Poption == "scissors" and Copttion == "rock"):
+  elif (Poption == "rock" and Coption == "scissors") or (Poption == "paper" and Coption == "scissors") or (Poption == "scissors" and Coption == "rock"):
     print("Computer win!")
-    Cscore += 1
+    CScore += 1
 
   elif (Poption=="rock" and Coption=="scissor") or (Poption=="scissor" and Coption=="paper") or (Poption=="paper" and Coption=="rock"):
         print("You win!")
@@ -41,15 +41,15 @@ while True:
   print("")
   print("Round No. " + str(Round))
   print("-------S C O R E  B O A R D------")
-  print(f"{anme.title()} : {PScore} --0-- Computer {CScore}")
+  print(f"{name.title()} : {PScore} --0-- Computer {CScore}")
   print("~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.~.")
   print("")
 
 
-  if Pscore == 5 or Cscore == 5:
+  if PScore == 5 or CScore == 5:
     break
 
-if Pscore > Cscore:
+if PScore > CScore:
   print("You win! :>")
 
 else:
